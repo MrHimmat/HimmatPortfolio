@@ -4,14 +4,13 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npx sentry-cli releases new OLL9-_WH94gbHzmD8c7AM",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "@react-three/drei": "^9.114.5",
     "@react-three/fiber": "^8.17.10",
-    "@sentry/nextjs": "^8.34.0",
     "@tabler/icons-react": "^3.19.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.9",
@@ -29,7 +28,6 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^14.2.16",
-    "@sentry/cli": "^2.37.0",
     "@types/node": "^20.16.12",
     "@types/react": "^18",
     "@types/react-dom": "^18",
