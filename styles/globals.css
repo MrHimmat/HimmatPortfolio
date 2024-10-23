@@ -1,0 +1,4 @@
+/* Hide the default browser cursor */
+body {
+  cursor: none;
+}

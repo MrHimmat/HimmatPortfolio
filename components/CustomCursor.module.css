@@ -1,0 +1,25 @@
+.cursor {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ff6347; /* Example border color (Tomato) */
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  transition: transform 0.15s ease-out, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+  /* Glowing shadow */
+  box-shadow: 0 0 15px rgba(255, 99, 71, 0.8), 0 0 30px rgba(255, 99, 71, 0.6),
+    0 0 45px rgba(255, 99, 71, 0.4);
+}
+
+.clicking {
+  background-color: #1557da; /* Filled color when clicking */
+  transform: translate(-50%, -50%) scale(0.8); /* Shrinks the cursor */
+
+  /* Blue glow effect when clicking */
+  box-shadow: 0 0 25px rgba(0, 123, 255, 1), 0 0 50px rgba(0, 123, 255, 0.9),
+    0 0 75px rgba(0, 123, 255, 0.7);
+}
